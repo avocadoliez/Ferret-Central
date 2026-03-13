@@ -165,12 +165,14 @@ html {
     #gallery {
         display: grid;
         align-content: space-evenly;
-        grid-template-columns: 20rem 20rem;
-        grid-auto-rows: 15rem;
+        grid-template-columns: auto auto;
+        grid-auto-rows: auto;
         row-gap: 4rem;
         column-gap: 5rem;
-        margin: 2.5rem;
+        margin-left: 2.5rem;
+        margin-right:2.5rem;
         margin-top: 4rem;
+        margin-bottom: 0;
     }
 
     #gallery-ferret {

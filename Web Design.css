@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.page-1 {
+    display: grid;
+    grid-template-areas:
+        'navbar'
+        'intro'
+        'facts'
+        'pictures';
+}
+
+.navbar {
+    grid-area: navbar;
+
+}
+
+.opening {
+    grid-area: intro;
+
+}
+
+.facts {
+    grid-area: facts;
+
+}
+
+.images {
+    grid-area: pictures;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        grid-area: 1;
+    }
+
+    .opening {
+        grid-area: 2;
+    }
+
+    .facts {
+        grid-area: 3;
+    }
+
+    .images {
+        grid-area: 4;
+    }
+
+    #nav {
+        width: 50rem;
+    }
+
+    #link {
+        font-size: 2rem;
+    }
+
+    #link:hover {
+        font-size: 2.5rem;
+        background-color: #fdc153;
+        max-height: 6.4rem;
+    }
+
+    #box {
+        width: 50rem;
+        height: 33rem;
+        max-height: 40rem;
+    }
+
+    #title {
+        width: 45rem;
+        font-size: 4.5rem;
+    }
+
+    #support {
+        width: 47rem;
+        font-size: 2.5rem;
+    }
+
+    #supporter {
+        width: 20rem;
+        font-size: 2rem;
+        border-width: 0.3rem;
+    }
+
+    #cool {
+        font-size: 3.5rem;
+        width: 40rem;
+    }
+
+    #reason {
+        font-size: 2.2rem;
+    }
+
+    #reason:hover {
+        font-size: 2.8rem;
+    }
+
+    #box-2 {
+        margin: 1rem;
+    }
+
+    #ferret-2 {
+        width: 34rem;
+        padding: 2rem;
+        border-width: 2rem;
+
+    }
+
+    #ferret-2:hover {
+        width: 34rem;
+        padding: 0 0;
+    }
+}
+
+
+.title {
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    width: clamp(10rem, 60vw, 50rem);
+
+}
+
+.support {
+    padding-left: 1rem;
+    width: clamp(10rem, 60vw, 50rem);
+    font-size: 1.45rem;
+
+}
+
+.supporter {
+    background-color: #fdc153;
+    width: clamp(10rem, 60vw, 25rem);
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+
+
+}
+
+.supporter:hover {
+    background-color: #ffd68a;
+}
+
+
+body {
+    width: auto;
+    max-width: 100rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container-1 {
+    background-color: orange;
+    width: 77.55rem;
+    max-width: 100rem;
+    max-height: 19.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+    bottom: 2rem;
+}
+
+.cool {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+
+.list {
+    font-size: 1.5rem;
+
+}
+
+.reason-1:hover {
+    font-size: 2rem;
+}
+
+.reason-2:hover {
+    font-size: 2rem;
+}
+
+.reason-3:hover {
+    font-size: 2rem;
+}
+
+.navigation-bar {
+    background-color: #ffa500;
+    width: 77.55rem;
+    max-width: 100rem;
+    max-height: 8rem;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+
+}
+
+.tab {
+    list-style: none;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+.options {
+    float: left;
+}
+
+.link {
+    display: block;
+    color: black;
+    padding: 2rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.link:hover {
+    background-color: #fdc153;
+    font-size: 2rem;
+    max-height: 5.8rem;
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem;
+
+}
+
+.ferret-2 {
+    border-color: #ffa500;
+    border-style: solid;
+    border-radius: 25%;
+    border-width: 1.5rem;
+    width: 18.2rem;
+    height: auto;
+    margin: 0.8rem;
+    padding: 0.8rem;
+}
+
+.ferret-2:hover {
+    width: clamp(10rem, 23.4vw, 30rem);
+    padding: 0 0;
+}
+
+.gallery-title {
+    font-size: 4rem;
+    width: clamp(30rem, 60vw, 60rem);
+    padding-left: 2rem;
+}
+
+.gallery-exp {
+    font-size: 2rem;
+    width: clamp(30rem, 60vw, 60rem);
+    padding-left: 2rem;
+}
+
+.gallery {
+
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20rem 20rem 20rem;
+    row-gap: 4rem;
+    column-gap: 2rem;
+    margin: 2rem;
+    margin-top: 4rem;
+}
+
+.gallery-ferret {
+    width: 19.8rem;
+    height: auto;
+    padding: 1.5rem 1.5rem;
+    margin: auto;
+    border-radius: 25%;
+    border-width: 1.5rem;
+    border-style: solid;
+    border-color: #ffa500;
+    display: block;
+}
+
+.gallery-ferret:hover {
+    width: 19.8rem;
+    padding: 0 0;
+}

@@ -170,7 +170,7 @@ html {
         row-gap: 4rem;
         column-gap: 5rem;
         margin-left: 2.5rem;
-        margin-right:2.5rem;
+        margin-right: 2.5rem;
         margin-top: 4rem;
         margin-bottom: 0;
     }
@@ -182,15 +182,19 @@ html {
     #gallery-title {
         width: 50rem;
         font-size: 4.2rem;
-        padding-left: 0;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: auto;
         text-align: center;
     }
 
     #gallery-exp {
         width: 50rem;
         font-size: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         margin: auto;
         text-align: center;
     }

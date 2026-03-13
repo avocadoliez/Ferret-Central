@@ -181,6 +181,7 @@ html {
 
     #gallery-title {
         width: 50rem;
+        min-width: 50rem;
         font-size: 4.2rem;
         padding-top: 2rem;
         padding-left: 2rem;
